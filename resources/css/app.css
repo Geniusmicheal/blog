@@ -1,0 +1,55 @@
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    color: #222222;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+}
+h4, .h4 {font-size: 18px;}
+
+.container.fullwidth {width: 100%;}
+.container.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.section-gap-full {padding: 120px 0;}
+
+.blog-lists-section {
+    background: #eee;
+}
+
+.blog-lists-section .single-widget {
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    -webkit-box-shadow: 0px 30px 90px rgba(0, 0, 0, 0.14) !important;
+    box-shadow: 0px 30px 90px rgba(0, 0, 0, 0.14) !important;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.blog-lists-section .single-widget .widget-title {margin-bottom: 20px;}
+
+.blog-lists-section .social-widget li {
+    display: inline-block;
+    margin:0 10px 5px 0;
+}
+.blog-lists-section .social-widget li a {
+    text-align: center;
+    color: #fff;
+    background: #007bff;
+    padding: 10px;
+    width: 42px;
+    display: block;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.blog-lists-section .social-widget li a:hover {background: #007bff;}
+select, input:is([type=text], [type=password], [type=email]) {  background-color: transparent !important; }
+form.single-widget select {
+    margin-bottom: 10px;
+}
