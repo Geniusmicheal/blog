@@ -16,7 +16,7 @@ function Home() {
             ...(userToken && {'Authorization': `Bearer ${userToken}`})
         }
 
-        fetch(`http://127.0.0.1:8000/api/news?q=${search}`,
+        fetch(`http://127.0.0.1/api/news?q=${search}`,
             { signal, method: 'GET',  headers}).
         then(res => res.json()).then(result =>{ setNewsData(result["results"]);  setLoader(false);})
         .catch(err =>{if(err.name==="AbortError") console.log("cancelled!"); setLoader(false);});

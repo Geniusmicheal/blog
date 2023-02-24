@@ -17,7 +17,7 @@ export default function Setting() {
             category: category.value
         };
 
-        await fetch('http://127.0.0.1:8000/api/updatepreference',  {
+        await fetch('http://127.0.0.1/api/updatepreference',  {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${userToken}`},
 

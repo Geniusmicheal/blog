@@ -35,7 +35,7 @@ const sumbitEvent = async ({setLoader, showAlert, setUserDetail, navigate}, even
         if(!key)continue;
         formData[key] =  ele[i].value
     }
-    await fetch(`http://127.0.0.1:8000/api/${submitEle['name'].toLowerCase()}`,  {
+    await fetch(`http://127.0.0.1/api/${submitEle['name'].toLowerCase()}`,  {
         method: 'POST',
         headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify(formData)

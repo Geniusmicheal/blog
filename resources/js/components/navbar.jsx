@@ -37,7 +37,7 @@ const Navbar = () => {
         else dropdown_menu.style.display = "block";
     }
     const Logout = async ()=> {
-        await fetch(`http://127.0.0.1:8000/api/logout`,  {
+        await fetch(`http://127.0.0.1/api/logout`,  {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
